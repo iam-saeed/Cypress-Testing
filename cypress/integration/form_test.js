@@ -18,8 +18,10 @@ describe('Password Input Checker', function () {
     }) 
 })
 
-describe("Is Box Checked?", function () {
-    it("Checks to see if user will give away all their data", function () {
-        cy.get('[type="checkbox"]').check(true && false) 
-    })
+describe('Password Input Checker', function () {
+    it('checks to see if their is an password input', function () {
+        cy.get("[type='password']")
+        cy.get("[type='password']").type('Hello123!')
+    }) 
 })
+ 
